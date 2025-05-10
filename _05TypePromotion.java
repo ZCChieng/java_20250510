@@ -39,7 +39,8 @@ public class _05TypePromotion {
         double l = j + k; // 正確
         System.out.println(l);// 300.0
 
-        //優先級 : double > float > long > int > short > byte (會提升成bytes比較大的型態)
+        // 優先級 : double > float > long > int > short > byte
+        // 浮點數 > 整數 (因為整數的精準度是100%，但浮點數的精準度是有機率發生遺失的，所以只能精準度大的去「配合」精準度低的。)
 
         // 5.數值和字串運算，結果為字串。
         String m = "Hello";
